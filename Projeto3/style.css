@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato', sans-serif; 
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Adiciona um respiro caso a tela seja pequena */
+
+}
+
+/* 2. O COMPONENTE DO POST - O FOCO DO NOSSO ESTUDO! */
+.post-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;  /* Garante que a imagem respeite os cantos arredondados */
+}
+
+/* 3. ESTILOS DOS ITENS FILHOS DO FLEXBOX */
+.post-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+    .post-excerpt {
+        margin-bottom: 0;
+        color: #718096;
+        line-height: 1.6;
+    }
